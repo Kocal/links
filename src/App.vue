@@ -1,21 +1,32 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import Link from '@/components/Link.vue';
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-</template>
+  <div class="w-full max-w-[500px]">
+    <header>
+      <h1 class="text-4xl sm:text-6xl mb-10 text-center font-thin text-white">
+        Links
+      </h1>
+    </header>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+    <main class="flex flex-col space-y-5">
+      <Link url="https://github.com/Kocal" class="bg-[#24292f] hover:bg-[#2f363d] text-white">
+        <FontAwesomeIcon :icon="['fab', 'github']" />
+        GitHub
+      </Link>
+      <Link url="https://twitter.com/Kocal_" class="bg-[#00acee] hover:bg-[#09bbff] text-white">
+        <FontAwesomeIcon :icon="['fab', 'twitter']" />
+        Twitter (1)
+      </Link>
+      <Link url="https://twitter.com/HugoAlliaume" class="bg-[#00acee] hover:bg-[#09bbff] text-white">
+        <FontAwesomeIcon :icon="['fab', 'twitter']" />
+        Twitter (2)
+      </Link>
+      <Link url="https://www.instagram.com/thekocal" class="bg-[#dd2a7b] hover:bg-[#e14089] text-white">
+        <FontAwesomeIcon :icon="['fab', 'instagram']" />
+        Instagram
+      </Link>
+    </main>
+  </div>
+</template>
