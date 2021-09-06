@@ -11,7 +11,7 @@ defineProps<{
 </script>
 
 <template>
-  <a :href="url" v-bind="$attrs" class="shadow-lg hover:shadow-xl transition p-4 text-center uppercase tracking-widest">
+  <a :href="url" v-bind="$attrs" class="shadow-lg hover:shadow-xl transition p-4 text-center uppercase tracking-widest select-none">
     <slot />
   </a>
 </template>
