@@ -31,6 +31,10 @@ import Link from '@/components/Link.vue';
         <FontAwesomeIcon :icon="['fab', 'instagram']" />
         Instagram
       </Link>
+      <Link url="https://www.mangacollec.com/user/kocal/collection" class="bg-[#CF000A] filter hover:brightness-125 text-white">
+        <FontAwesomeIcon :icon="['fa', 'book-open']" />
+        Mangathèque
+      </Link>
       <Link url="https://www.strava.com/athletes/62379808" class="bg-[#fc4c02] filter hover:brightness-125 text-white">
         <FontAwesomeIcon :icon="['fab', 'strava']" />
         Strava

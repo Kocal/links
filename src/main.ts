@@ -3,10 +3,10 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faBlog } from '@fortawesome/free-solid-svg-icons';
+import { faBlog, faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faTwitter, faGithub, faStrava } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faBlog, faInstagram, faTwitter, faGithub, faStrava);
+library.add(faBlog, faBookOpen, faInstagram, faTwitter, faGithub, faStrava);
 
 const app = createApp(App);
 app.component('FontAwesomeIcon', FontAwesomeIcon);
