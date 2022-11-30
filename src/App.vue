@@ -19,13 +19,9 @@ import Link from '@/components/Link.vue';
         <FontAwesomeIcon :icon="['fab', 'github']" />
         GitHub
       </Link>
-      <Link url="https://twitter.com/Kocal_" class="bg-[#00acee] filter hover:brightness-125 text-white">
-        <FontAwesomeIcon :icon="['fab', 'twitter']" />
-        Twitter (1)
-      </Link>
       <Link url="https://twitter.com/HugoAlliaume" class="bg-[#00acee] filter hover:brightness-125 text-white">
         <FontAwesomeIcon :icon="['fab', 'twitter']" />
-        Twitter (2)
+        Twitter
       </Link>
       <Link url="https://www.instagram.com/thekocal" class="bg-[#dd2a7b] filter hover:brightness-125 text-white">
         <FontAwesomeIcon :icon="['fab', 'instagram']" />
