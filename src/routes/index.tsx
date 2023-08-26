@@ -3,13 +3,12 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import { css } from "~/styled-system/css";
 import { link, stack } from "~/styled-system/patterns";
 import {
-  SiBlogger,
-  SiGithub,
-  SiInstagram,
-  SiReadme,
-  SiStrava,
-  SiTwitter,
-} from "@qwikest/icons/simpleicons";
+    SimpleIconsBookstack,
+    SimpleIconsGithub,
+    SimpleIconsInstagram, SimpleIconsReadme,
+    SimpleIconsStrava,
+    SimpleIconsTwitter
+} from "~/components/icons";
 
 export default component$(() => {
   return (
@@ -59,7 +58,7 @@ export default component$(() => {
               gap: 2,
             })}
           >
-            <SiBlogger />
+            <SimpleIconsReadme  />
             Blog
           </a>
           <a
@@ -69,7 +68,7 @@ export default component$(() => {
               gap: 2,
             })}
           >
-            <SiGithub />
+            <SimpleIconsGithub />
             GitHub
           </a>
           <a
@@ -79,7 +78,7 @@ export default component$(() => {
               gap: 2,
             })}
           >
-            <SiTwitter />
+            <SimpleIconsTwitter/>
             Twitter
           </a>
           <a
@@ -89,7 +88,7 @@ export default component$(() => {
               gap: 2,
             })}
           >
-            <SiInstagram />
+            <SimpleIconsInstagram />
             Instagram
           </a>
           <a
@@ -99,7 +98,7 @@ export default component$(() => {
               gap: 2,
             })}
           >
-            <SiReadme />
+            <SimpleIconsBookstack />
             Mangathèque
           </a>
           <a
@@ -109,7 +108,7 @@ export default component$(() => {
               gap: 2,
             })}
           >
-            <SiStrava />
+              <SimpleIconsStrava />
             Strava
           </a>
         </main>

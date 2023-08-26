@@ -5,6 +5,9 @@ const linkConfig = {
 transform(props) {
   const _a = props, { color } = _a, rest = __objRest(_a, ["color"]);
   return __spreadValues({
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     color: "white",
     backgroundColor: color,
     shadow: {

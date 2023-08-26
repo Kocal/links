@@ -32,6 +32,9 @@ export default defineConfig({
         transform(props: { [x: string]: any; color: any; }) {
           const { color, ...rest } = props;
           return {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
             color: "white",
             backgroundColor: color,
             shadow: {
