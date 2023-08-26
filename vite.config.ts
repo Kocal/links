@@ -1,16 +1,21 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import { resolve } from 'path';
+import { defineConfig } from "vite";
+import { qwikVite } from "@builder.io/qwik/optimizer";
+import { qwikCity } from "@builder.io/qwik-city/vite";
+import tsconfigPaths from "vite-tsconfig-paths";
+import { macroPlugin } from "@builder.io/vite-plugin-macro";
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [vue()],
-  resolve: {
-    alias: {
-      '@': resolve(__dirname, 'src'),
+export default defineConfig(() => {
+  return {
+    plugins: [
+      macroPlugin({ preset: "pandacss" }),
+      qwikCity(),
+      qwikVite(),
+      tsconfigPaths(),
+    ],
+    preview: {
+      headers: {
+        "Cache-Control": "public, max-age=600",
+      },
     },
-  },
-  server: {
-    open: true,
-  },
+  };
 });
