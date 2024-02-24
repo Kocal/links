@@ -1,9 +1,6 @@
 {
-  "name": "my-qwik-empty-starter",
+  "name": "links",
   "description": "App with Routing built-in ready to create your app",
-  "engines": {
-    "node": ">=15.0.0"
-  },
   "private": true,
   "scripts": {
     "build": "qwik build",
@@ -26,17 +23,16 @@
     "@builder.io/qwik": "^1.2.9",
     "@builder.io/qwik-city": "^1.2.9",
     "@builder.io/vite-plugin-macro": "~0.0.7",
-    "@pandacss/dev": "^0.8.0",
-    "@types/eslint": "8.44.1",
-    "@types/node": "^20.4.5",
-    "@typescript-eslint/eslint-plugin": "6.2.0",
-    "@typescript-eslint/parser": "6.2.0",
-    "eslint": "8.45.0",
+    "@pandacss/dev": "^0.32.1",
+    "@types/eslint": "^8.56.3",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.57.0",
     "eslint-plugin-qwik": "^1.2.9",
-    "prettier": "3.0.0",
-    "typescript": "5.1.6",
-    "undici": "5.22.1",
-    "vite": "4.4.7",
-    "vite-tsconfig-paths": "4.2.0"
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "undici": "^6.6.2",
+    "vite": "^5.1.4",
+    "vite-tsconfig-paths": "^4.3.1"
   }
 }
